@@ -48,7 +48,7 @@ ido =ido +datetime.timedelta(minutes = sum(x.perc for x in lista if x.latta))
 print(f"4. feladat:\nSorozatnézéssel {ido.day-1} napot {ido.hour} órát és {ido.minute} percet töltött.")
 
 #5. feladat
-bekert = input("5. feladat:\nAdjon meg egy dátumot! Dátum= 2017.10.18: ")
+bekert = input("5. feladat:\nAdjon meg egy dátumot! Dátum= ")
 bekertD = bekert.split('.')
 datum = datetime.datetime(int(bekertD[0]),int(bekertD[1]),int(bekertD[2]))
 valogatott = [x for x in lista if x.datum ==  datum]
@@ -56,7 +56,7 @@ valogatott = [x for x in lista if x.datum ==  datum]
 
 
 #7. feladat
-bekertNap = input("7. feladat:\nAdja meg a hét egy napját (például cs)! Nap= cs: ")
+bekertNap = input("7. feladat:\nAdja meg a hét egy napját (például cs)! Nap= ")
 nap = False
 for x in lista: 
     if x.nap == bekertNap:
